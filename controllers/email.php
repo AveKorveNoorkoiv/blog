@@ -5,10 +5,7 @@
  * Date: 08/12/2017
  * Time: 22:46
  */
-
 namespace App;
-
-
 class email extends Controller
 {
     function ajax_send_error_report()
@@ -26,9 +23,6 @@ class email extends Controller
                 'COOKIE' => $_COOKIE,
                 'THIS' => get_object_vars($this)
             ], 1) . '</pre>');
-
-
         stop(200);
     }
-
 }

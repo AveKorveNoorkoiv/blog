@@ -1,5 +1,4 @@
 <?php namespace App;
-
 /**
  * Created by PhpStorm.
  * User: hennotaht
@@ -9,7 +8,6 @@
 class logout extends Controller
 {
     public $requires_auth = false;
-
     function index()
     {
         session_destroy();
